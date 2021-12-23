@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow : #EAC926;
+    --blue : #03264C;
+    --lightBlue : #1259c3;
+    --darkGrey : #666;
+    --lightGrey : #ebebeb;
+    --green : #39b54a;
+    /* Fonts */
+    --font-primary : 'Roboto', sans-serif;
+    /* Font size */
+    --paragraph : 12px;
+    --title : 24px;
+    --prices : 18px;
+    --descriptions : 16px;
+}
+
+body{
+    font-family: var(--font-primary);
+    background-color: #ebebeb;
+}
+
+header{    
+    background-color: var(--yellow);
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header p {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+input{    
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    display: inline;
+}
+
+.fa-search {
+    background-color: white;
+    padding: 12px 5px;
+    border-radius: 0 5px 5px 0;
+    color: var(--darkGrey);
+}
+
+.burger-menu{
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--lightBlue);
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 50%;
+    margin-top: -25px;
+}
+
+.ultimaVisita{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ultimaVisita h2 {
+    color: var(--darkGrey);
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+main {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.ultimaVisita div {
+    margin: 10px 0;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+}
+
+.priceSend {
+    text-align: center;
+}
+
+footer{
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+.nav{
+    display: none;
+}
+
+.priceSale {
+    display: flex;
+    flex-direction: row;
+}
+
+.price{    
+    flex-grow: 0.3;
+}
+
+.sale {
+    flex-grow: 0.7;
+    color: #39b54a;
+}
+
+.producto {
+    max-height: 450px;
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    border-top: 1px solid #ebebeb;
+}
+
+main section div i {
+    color: var(--Verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 72px;
+}
+
+hr {
+    border: 1px solid rgb(243, 243, 243);
+    width: 100%;
+}
+
+.fa-truck{
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 100px;
+}
+
+.articleDescription {
+    margin: 0;
+    padding: 10px 0px 20px 20px;
+    color: var(--darkGrey);
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+footer section i {
+    color: var(--lightBlue);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section {
+    margin: 50px 35px;
+}
+
+footer section h5 {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: var(--darkGrey);
+}
+
+footer section p {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 10px;
+    color: var(--darkGrey);
+}
+
+span {
+    width: 45%;
+    display: flex;
+    padding-right: 10px;
+}
+
+.img-publicidad img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .logo {
+        width: 30%;
+    }
+    span {
+        width: 27%;
+    display: flex;
+    margin: auto;
+    }
+    header p {        
+        margin: 20px 0;
+        width: 40%;
+        font-size: 10px;
+        text-align: right;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .site {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 11px;
+    }
+
+    .loginNavBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 11px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .ultimaVisita{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .producto{
+        max-width: 200px;
+        margin: 10px 20px;
+    }
+    .ultimaVisita div {
+        width: 100%;
+    }
+    .producto img{
+        width: 200px;
+    }
+    .fa-truck{
+        bottom: 90px;
+    }
+}

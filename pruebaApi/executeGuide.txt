@@ -1,0 +1,2 @@
+Execute in console: 
+node main.js

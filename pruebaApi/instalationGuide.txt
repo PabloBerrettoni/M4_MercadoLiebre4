@@ -1,0 +1,10 @@
+npm i
+----------------------
+npm install node-fetch
+----------------------
+configure package.json
+"type": "module",
+----------------------
+then import:
+import fetch from "node-fetch";
+----------------------
